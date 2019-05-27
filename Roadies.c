@@ -8,7 +8,7 @@ int check(int B[10], int n)
 {
     for(int i=0; i<10; i++)
         if(n == B[i])
-            return 0;                   // 0 => is present => False
+            return 0;                   // 0 => is present => False 
     return 1;                           // 1 => is not present => True
 }
 
