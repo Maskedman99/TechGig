@@ -12,7 +12,7 @@ int check(int B[10], int n)
     return 1;                           // 1 => is not present => True
 }
 
-void digit(int B[10], int*  Btop, int n)
+void digit(int B[10], int*  Btop, long int n)
 {
     long int temp = n;
     while(n > 0)
@@ -30,7 +30,7 @@ void digit(int B[10], int*  Btop, int n)
 int sumfunc(int n)
 {
     int B[10],i, boolean, Btop = 0;
-    int temp, sum = 0; 
+    long int temp = 0, sum = 0; 
 
     for(i=0; i<10; i++)
         B[i] = -1;
@@ -80,7 +80,7 @@ void main()
         scanf("%d",&N);
         for(i=0; i<N; i++)
             scanf("%ld", &A[i]);
-        int sum = 0, temp = 0;
+        long int sum = 0, temp = 0;
 
         for(i=0; i<N; i++)
         {
@@ -88,7 +88,7 @@ void main()
             if(temp > sum)
                 sum = temp;
         }        
-        printf("%d\n", sum);    
+        printf("%ld\n", sum);    
 
     }
 
