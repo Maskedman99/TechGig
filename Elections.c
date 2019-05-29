@@ -13,11 +13,13 @@ void split()
         for(j=0; j<c; j++)
         {
             if(R[i] > sum)
+            {
                 if(C[j] > 0)
                 {
                     C[j] -= 1;
                     sum += 1;
                 }
+            }    
             else
                 break;
                        
